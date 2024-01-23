@@ -13,12 +13,12 @@
 <body>
     <div class="container">
         <div class="row text-center mt-5">
-            <div class="col-12">
+            <div class="col-12 text-danger">
                 <h1>Hidden Badwords</h1>
             </div>
             <div class="col-12 mt-5">
                 <form action="dashboard.php" method="GET">
-                    <div class="row">
+                    <div class="row justify-content-center">
                         <div class="col-6">
                             <label for="my_name" class="form-label">Nome:</label>
                             <input type="text" name="name" id="my_name" class="form-control" required>
@@ -27,8 +27,13 @@
                             <label for="my_surname" class="form-label">Cognome:</label>
                             <input type="text" name="surname" id="my_surname" class="form-control" required>
                         </div>
+                        <div class="col-6 mt-5">
+                            <label for="phrase">Inserisci la frase da censurare:</label>
+                            <input type="text" name="phrase" id="phrase" class="form-control "
+                                placeholder="Prova con: nazista, dio, stonzo, fascista" required>
+                        </div>
                         <div class="col-12 mt-5">
-                            <button class="btn btn-success btn-lg">Invia</button>
+                            <button class="btn btn-success btn-lg" type="submit">Invia</button>
                         </div>
                     </div>
                 </form>
