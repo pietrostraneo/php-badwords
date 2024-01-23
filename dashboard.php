@@ -2,11 +2,12 @@
     $name = $_GET['name'];
     $surname = $_GET['surname'];
     $phrase = $_GET['phrase'];
+    $word = $_GET['word'];
     $censored = "***";
-    $censoredPhrase = str_replace('dio', $censored, $phrase);
-    $censoredPhrase = str_replace('nazista', $censored, $censoredPhrase);
-    $censoredPhrase = str_replace('fascista', $censored, $censoredPhrase);
-    $censoredPhrase = str_replace('stronzo', $censored, $censoredPhrase)
+    $censoredPhrase = str_replace($word, $censored, $phrase);
+    $censoredPhrase = str_replace($word, $censored, $censoredPhrase);
+    $censoredPhrase = str_replace($word, $censored, $censoredPhrase);
+    $censoredPhrase = str_replace($word, $censored, $censoredPhrase)
 ?>
 
 
